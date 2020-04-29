@@ -13,7 +13,6 @@ namespace KeepColorsSeparate
     {
         public KeepColorsSeparateMod(ModContentPack content): base(content)
         {
-            Log.Message("loaded");
             var harmony = new Harmony("PeteTimesSix.KeepColorsSeparate");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }

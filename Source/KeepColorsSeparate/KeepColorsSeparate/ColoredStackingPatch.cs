@@ -20,7 +20,6 @@ namespace KeepColorsSeparate
                 var colorableThat = other.TryGetComp<CompColorable>();
                 if (colorableThis != null && colorableThat != null)
                 {
-                    Log.Message("checking...");
                     __result = colorableThis.Color.IndistinguishableFrom(colorableThat.Color);
                 }
             }
